@@ -2,7 +2,7 @@
 A PowerShell script that enables simple clip trimming by appending a string to the filename.
 
 ## Intent
-I have found that saving clips from gaming and sharing them can be a pain, especially when using non-linear editors to trim clips. Using [ffmpeg](https://ffmpeg.org/) commands like `ffmpeg -n -ss start_time -t duration -i input.mp4 output.mp4` can help, but it's clunky to do this for every single clip. Thus, I made this PowerShell script.
+I have found that saving clips from gaming and sharing them can be a pain, especially when using non-linear editors to trim clips. Using [ffmpeg](https://ffmpeg.org/) commands like `ffmpeg -ss start_time -t duration -i input.mp4 output.mp4` can help, but it's clunky to do this for every single clip. Thus, I made this PowerShell script.
 
 This could become a batch/bash script with a little work, but I use PowerShell as often as I can.
 
