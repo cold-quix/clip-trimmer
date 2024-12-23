@@ -20,5 +20,5 @@ Example: `cool sweet clip 4_17.mp4` will create a 13-second video starting at 00
 
 ## Notes
 1. Avoid exotic characters in filenames, since that may cause unexpected behavior.
-2. File name must be a series of words separated by spaces, then the final "#_#" in that exact order. Numbers can be used in filenames.
-3. Will not overwrite existing files in ./trimmed/ output directory since -n is passed in ffmpeg command. This is intentional so you can batch trim a bunch of files, output them to ./trimmed/, review them, and redo any with wrong timestamps. Simply delete the output and rename the input, then run the script again.
+2. File name must be a series of words separated by spaces, then the final `#_#` in that exact order. Numbers can be used in filenames.
+3. Will not overwrite existing files in ./trimmed/ output directory since `-n` is passed in ffmpeg command. This is intentional so you can batch trim a bunch of files, output them to `./trimmed/`, review them, and redo any with wrong timestamps. Simply delete the output and rename the input, then run the script again.
