@@ -32,13 +32,13 @@ else
     mkdir trimmed
 }
 
-Get-ChildItem . -Filter *.$type |
+Get-ChildItem . -Filter *.$in |
 ForEach-Object {
     $video = $_.Name
     echo "Working on: $video"
     $outputExtension = ".$out"
     
-    $vidArray = $video -split ".$type" # Remove .extension from end of filename
+    $vidArray = $video -split ".$in" # Remove .extension from end of filename
     $vidArray = @($vidArray) -ne '' # Remove empty elements
 
     $vidArray = $vidArray[0] -split " " # Split on spaces
